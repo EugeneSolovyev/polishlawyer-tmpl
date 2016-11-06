@@ -9,10 +9,13 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: //www.gnu.org/licenses/gpl-2.0.html
 */
-
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /*==  ===*/
@@ -20,7 +23,15 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-family: 'Segoe UI Symbol', sans-serif;
     font-size: 1.5em;
-    
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: center;
 }
 
 p, a {
@@ -46,7 +57,7 @@ p, a {
 
 .greetings {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background: url(../images/51317633636.png) no-repeat 50%;
     background-size: cover;
     display: flex;
@@ -59,10 +70,6 @@ p, a {
 }
 
 .navbar {
-    padding: 0;
-}
-
-.menu-menu-container {
     width: 100%;
     height: 10vh;
     background-color: #000;
@@ -74,6 +81,10 @@ p, a {
     line-height: 10vh;
     display: flex;
     justify-content: space-around;
+    margin: 0;
+}
+
+.menu-item {
     list-style: none;
 }
 
@@ -99,6 +110,12 @@ p, a {
     text-align: justify;
 }
 
+.our-services,
+.blog,
+.contact {
+    box-shadow: 0 0 20px rgba(0,0,0,.9);
+}
+
 .history,
 .expertise {
     padding: 1em;
@@ -122,16 +139,15 @@ p, a {
 }
 
 .team-member {
-    position: relative;
     margin-top: .5em;
 }
 
-.team-member .email {
+.team-member-card>.email {
+    position: absolute;
     width: 40px;
     height: 40px;
-    position: absolute;
     top: calc(100% - 48px);
-    left: calc(30% - 34px);
+    left: calc(100% - 40px);
     background-color: #fff;
     margin: 0;
     display: none;
@@ -149,11 +165,12 @@ p, a {
     margin-bottom: .5em;
 }
 
-.team-member>.img-fluid {
+.team-member>.team-member-card {
     width: 30%;
+    position: relative;
 }
 
-.team-member>.img-fluid:hover ~ .email {
+.team-member-card>.img-fluid:hover ~ .email {
     display: block;
     cursor: pointer;
 }
@@ -217,6 +234,15 @@ p, a {
     color: #fff;
 }
 
+.blog>h4>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-blog {
+    min-height: 100vh;
+}
+
 @media all and (max-width: 850px) {
     .history,
     .expertise {
@@ -225,5 +251,9 @@ p, a {
     
     .post-content {
         padding-left: 0;
+    }
+    
+    .greetings {
+        padding: 0 10%;
     }
 }
