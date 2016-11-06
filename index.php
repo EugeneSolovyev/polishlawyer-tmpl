@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="navbar navbar-fixed-top">
-        <nav class="navbar">
-            <ul class="nav navbar-nav">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Our Service</a>
-                <a href="#">The Team</a>
-                <a href="#">Blog</a>
-                <a href="#">Case Studies</a>
-                <a href="#">Contact</a>
-                <a href="#">Language</a>
-            </ul>
-        </nav>
-    </div>
+<?php get_header(); ?>
     <div class="container-fluid">
         <div class="row">
             <div class="header col-lg-12">
@@ -118,7 +92,7 @@
                 <div class="case-studies-post col-lg-12">
                     <div class="post">
                         <div class="post-img col-lg-4">
-                            <img src="images/slide21.png" alt="" class="img-responsive">
+                            <img src="./css/images/slide21.png" alt="" class="img-responsive">
                         </div>
                         <div class="post-content col-lg-8">
                             <h4>Some Case Title</h4>
@@ -130,14 +104,4 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="contact col-lg-12">
-                <h2>Contact us</h2>
-            </div>
-        </div>
-    </div>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
-    <script src=".js/bootstrap.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>
