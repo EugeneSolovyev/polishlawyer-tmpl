@@ -60,7 +60,7 @@
                         <div class="carousel-item active">
 -->
                             <?php if (is_home()) { tha_content_top(); } ?>
-                            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                            <?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
                             <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                             <div class="postedby"> Posted by <?php the_author_posts_link(); ?> on <?php the_time(); ?></div>
                             <?php the_content(); ?>
@@ -69,6 +69,7 @@
                             <?php endif; ?>
                             <div><p><?php posts_nav_link(); ?></p></div>
                             <?php if (is_home()) { tha_content_bottom(); } ?>
+                            
 <!--
                         </div>
                     </div>
