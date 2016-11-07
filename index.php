@@ -3,8 +3,8 @@
         <div class="row">
             <div class="header col-lg-12">
                 <div class="greetings">
-                    <h1>Welcome</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum sapiente sint voluptates veritatis nostrum, amet, facilis, ducimus illo nihil fuga necessitatibus dignissimos, ipsam rem aut. Tenetur magnam quia quibusdam delectus!</p>
+                    <h1><?php bloginfo('name'); ?></h1>
+                    <p><?php bloginfo('description'); ?></p>
                 </div>
             </div>
         </div>
