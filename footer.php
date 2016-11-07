@@ -1,5 +1,5 @@
         <div class="row">
-            <div class="contact col-lg-12">
+            <div class="contact col-lg-12" id="contact-us">
                 <h2>Contact us</h2>
             </div>
         </div>

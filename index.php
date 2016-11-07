@@ -36,14 +36,14 @@
                 <div class="row">
                     <div class="team-member col-lg-6 col-sm-12">
                         <div class="team-member-card">
-                            <img src="./wp-content/themes/polishlawyer/images/Magda-Rostek_cr1.jpg" alt="" class="img-fluid">
+                            <img src="http://localhost/nproject/wp-content/uploads/2016/11/Magda-Rostek_cr1.jpg" alt="" class="img-fluid">
                             <div class="email"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
                         </div>
                         <p>Magdalena Rostek graduated from University of Warsaw, School of Law in Poland. She is employed as a research and immigration specialist at Immigration Law Office of Y. Ziankovich, P.C. Mrs. Rostek is a member of American Society of International Law. She is fluent in Polish and English.</p>
                     </div>
                     <div class="team-member col-lg-6 col-sm-12">
                         <div class="team-member-card">
-                            <img src="./wp-content/themes/polishlawyer/images/polishlawyer_slider01-220x218.jpg" alt="" class="img-fluid">
+                            <img src="http://localhost/nproject/wp-content/uploads/2016/11/polishlawyer_slider01-220x218.jpg" alt="" class="img-fluid">
                             <div class="email"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
                         </div>
                         <p>Youras Ziankovich is a lawyer with practice in US immigration law, as well as in business and corporate matters. He graduated from the Ukrainian Academy of Banking and Fordham University School of Law. He speaks in English, Polish, Belarusian, Ukrainian and Russian languages.</p>
@@ -59,16 +59,15 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
 -->
-                            <?php if (is_home()) { tha_content_top(); } ?>
-                            <?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
-                            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                            <?php
+                            $id=1; // ID заданной рубрики
+                            $n=3;   // количество выводимых записей
+                            $recent = new WP_Query("cat=$id&showposts=$n");
+                            while($recent->have_posts()) : $recent->the_post();?>
+                            <h4><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h4>
                             <div class="postedby"> Posted by <?php the_author_posts_link(); ?> on <?php the_time(); ?></div>
                             <?php the_content(); ?>
-                            <?php endwhile; else : ?>
-                            <p><?php _e( '<h4>Sorry...</h4><p>There is no post.</p>' ); ?></p>
-                            <?php endif; ?>
-                            <div><p><?php posts_nav_link(); ?></p></div>
-                            <?php if (is_home()) { tha_content_bottom(); } ?>
+                            <?php endwhile; ?>
                             
 <!--
                         </div>
@@ -96,40 +95,16 @@
                 </ul>
                 <div class="case-studies-post col-lg-12">
                     <div class="post">
-                        <div class="post-img col-lg-4">
-                            <img src="./wp-content/themes/polishlawyer/images/sm.frontBanner.600.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="post-content col-lg-8">
-                            <h4>Some Case Title</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas asperiores quo dolore ut vitae dolorum esse odit expedita aspernatur, amet quod quam tempore tenetur, error debitis, deserunt repellendus ea. Tempore!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eveniet ratione, suscipit illo dolores, aut accusamus nihil iure magni reprehenderit id! Et quia, commodi assumenda at vero blanditiis aspernatur veniam.</p>
-                            <h6>The Verdict</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magnam ipsa esse explicabo necessitatibus veritatis facere obcaecati eum amet unde. At, tenetur eius adipisci consectetur, delectus eveniet id a voluptatibus.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="case-studies-post col-lg-12">
-                    <div class="post">
-                        <div class="post-img col-lg-4">
-                            <img src="./wp-content/themes/polishlawyer/images/images.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="post-content col-lg-8">
-                            <h4>Some Case Title</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas asperiores quo dolore ut vitae dolorum esse odit expedita aspernatur, amet quod quam tempore tenetur, error debitis, deserunt repellendus ea. Tempore!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eveniet ratione, suscipit illo dolores, aut accusamus nihil iure magni reprehenderit id! Et quia, commodi assumenda at vero blanditiis aspernatur veniam.</p>
-                            <h6>The Verdict</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magnam ipsa esse explicabo necessitatibus veritatis facere obcaecati eum amet unde. At, tenetur eius adipisci consectetur, delectus eveniet id a voluptatibus.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="case-studies-post col-lg-12">
-                    <div class="post">
-                        <div class="post-img col-lg-4">
-                            <img src="./wp-content/themes/polishlawyer/images/slide21.png" alt="" class="img-responsive">
-                        </div>
-                        <div class="post-content col-lg-8">
-                            <h4>Some Case Title</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas asperiores quo dolore ut vitae dolorum esse odit expedita aspernatur, amet quod quam tempore tenetur, error debitis, deserunt repellendus ea. Tempore!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto eveniet ratione, suscipit illo dolores, aut accusamus nihil iure magni reprehenderit id! Et quia, commodi assumenda at vero blanditiis aspernatur veniam.</p>
-                            <h6>The Verdict</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magnam ipsa esse explicabo necessitatibus veritatis facere obcaecati eum amet unde. At, tenetur eius adipisci consectetur, delectus eveniet id a voluptatibus.</p>
+                        <div class="post-content col-lg-12">
+                            <?php
+                            $id=4; // ID заданной рубрики
+                            $n=3;   // количество выводимых записей
+                            $recent = new WP_Query("cat=$id&showposts=$n");
+                            while($recent->have_posts()) : $recent->the_post();?>
+                            <h4><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h4>
+                            <div class="postedby"> Posted by <?php the_author_posts_link(); ?> on <?php the_time(); ?></div>
+                            <?php the_content(); ?>
+                            <?php endwhile; ?>
                         </div>
                     </div>
                 </div>
