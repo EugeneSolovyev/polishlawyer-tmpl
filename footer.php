@@ -1,6 +1,37 @@
         <div class="row">
             <div class="contact col-lg-12" id="contact-us">
                 <h2>Contact us</h2>
+                <p>Our offices are located in New York City and in Aurora, Colorado. We serve our clients in those two locations. Also we have direct phone numbers to reach us from Poland and Ukraine.</p>
+                <div class="row">
+                    <div class="contact-info col-lg-6 col-md-12">
+                        <p>Our contacts:</p>
+                        <ul>
+                            <li>E-Mail: <a href="#">service@polishlawyer.us</a></li>
+                            <li>Phone in NYC: (212) 920 5440</li>
+                            <li>Phone in Colorado: (720) 260 4605</li>
+                            <li>Direct phone from Poland: +48 (22) 397 02 32</li>
+                            <li>Direct phone from Ukraine: +380 (44) 392 05 24</li>
+                            <li>Or use our contact form</li>
+                        </ul>
+                    </div>
+                    <div class="contact-info col-lg-6 col-md-12">
+                        <p>Our locations:</p>
+                        <ul>
+                            <li>
+                                New York Office
+                                Youras Ziankovich, Esq.
+                                140 Broadway, 46th Floor, Suite 4613
+                                New York, NY 10005
+                            </li>
+                            <li>
+                                Colorado Office
+                                Law Office of Youras Ziankovich
+                                2821 S Parker Road, Suite 407
+                                Aurora, CO 80014
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
