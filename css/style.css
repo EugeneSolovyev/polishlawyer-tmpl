@@ -315,7 +315,7 @@ a[rel="next"] {
 }
 
 .article:first-of-type {
-    margin-top: 1em;
+    margin-top: 2.5em;
 }
 
 @media all and (max-width: 850px) {

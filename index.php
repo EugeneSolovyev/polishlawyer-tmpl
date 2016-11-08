@@ -10,23 +10,39 @@
         </div>
         <div class="row">
             <div class="about-us col-lg-12" id="about-us">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolores sint, maxime doloremque totam sit, recusandae consectetur natus porro in sapiente, nostrum ea molestias itaque accusantium sunt cupiditate debitis eius.</p>
+                <?php query_posts('page_id=104');
+                if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+                <h2><?php the_title(); ?></h2>
+                <?php the_content('Read the rest of this entry &raquo;'); ?>
                 <div class="history">
-                    <h3>History</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, vero temporibus, rem ratione hic perspiciatis aut perferendis accusamus consequatur nesciunt officiis repellat magni non dolores. Dolor, blanditiis laudantium quidem enim.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ea commodi nostrum laborum a animi iusto ipsum, expedita esse! Atque, quidem recusandae commodi! Sit, eligendi, voluptatem aperiam et ducimus nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ullam quo ad soluta laudantium tempore perferendis necessitatibus odio ea ex inventore neque commodi totam, voluptas, officia temporibus, nesciunt, ratione quisquam?</p>
+                    <?php
+                    $id=8; // ID заданной рубрики
+                    $n=1;   // количество выводимых записей
+                    $recent = new WP_Query("cat=$id&showposts=$n");
+                    while($recent->have_posts()) : $recent->the_post();?>
+                    <h4><?php the_title(); ?></h4>
+                    <?php the_content(); ?>
+                    <?php endwhile; ?>
                 </div>
                 <div class="expertise">
-                    <h3>Expertise</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, vero temporibus, rem ratione hic perspiciatis aut perferendis accusamus consequatur nesciunt officiis repellat magni non dolores. Dolor, blanditiis laudantium quidem enim.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ea commodi nostrum laborum a animi iusto ipsum, expedita esse! Atque, quidem recusandae commodi! Sit, eligendi, voluptatem aperiam et ducimus nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ullam quo ad soluta laudantium tempore perferendis necessitatibus odio ea ex inventore neque commodi totam, voluptas, officia temporibus, nesciunt, ratione quisquam?</p>
+                    <?php
+                    $id=7; // ID заданной рубрики
+                    $n=1;   // количество выводимых записей
+                    $recent = new WP_Query("cat=$id&showposts=$n");
+                    while($recent->have_posts()) : $recent->the_post();?>
+                    <h4><?php the_title(); ?></h4>
+                    <?php the_content(); ?>
+                    <?php endwhile; ?>
                 </div>
+                <?php endwhile; endif; wp_reset_query(); ?>
             </div>
         </div>
         <div class="row">
             <div class="our-services col-lg-12" id="our-services">
-                <h2>Our Services</h2>
-                <h4>We are spezializing in criminal justice. If you need further information, please dont hesitate to contact us.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quas officiis ipsa architecto quam optio maxime, reiciendis, reprehenderit autem sed, ullam eos, doloribus aut consequuntur quos. Fugiat rerum ex, tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur est quidem, ab sunt, voluptates maiores? Officiis maxime placeat consectetur velit assumenda esse nulla vitae repellat, aut saepe cumque deleniti reiciendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel pariatur quis, ex, labore adipisci animi molestiae quam doloremque expedita dolore officia culpa saepe alias minima consequuntur soluta fugiat quia sed?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur reiciendis, molestias sunt, porro labore odit nihil facere adipisci alias impedit veritatis voluptate ad modi autem maiores architecto veniam tempore culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia a odio ipsa nesciunt veniam sunt illo quos nisi culpa quia omnis nulla atque porro, doloremque enim sed nostrum ducimus!</p>
+                <?php query_posts('page_id=111');
+                if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+                <h2><?php the_title(); ?></h2><?php the_content('Read the rest of this entry &raquo;'); ?>
+                <?php endwhile; endif; wp_reset_query(); ?>
             </div>
         </div>
         <div class="row">
