@@ -53,14 +53,14 @@
                     <div class="team-member col-lg-6 col-sm-12">
                         <div class="team-member-card">
                             <img src="http://localhost/nproject/wp-content/uploads/2016/11/Magda-Rostek_cr1.jpg" alt="" class="img-fluid">
-                            <div class="email"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+                            <div class="email" data-toggle="modal" data-target="#feedback"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
                         </div>
                         <p>Magdalena Rostek graduated from University of Warsaw, School of Law in Poland. She is employed as a research and immigration specialist at Immigration Law Office of Y. Ziankovich, P.C. Mrs. Rostek is a member of American Society of International Law. She is fluent in Polish and English.</p>
                     </div>
                     <div class="team-member col-lg-6 col-sm-12">
                         <div class="team-member-card">
                             <img src="http://localhost/nproject/wp-content/uploads/2016/11/polishlawyer_slider01-220x218.jpg" alt="" class="img-fluid">
-                            <div class="email"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+                            <div class="email" data-toggle="modal" data-target="#feedback"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
                         </div>
                         <p>Youras Ziankovich is a lawyer with practice in US immigration law, as well as in business and corporate matters. He graduated from the Ukrainian Academy of Banking and Fordham University School of Law. He speaks in English, Polish, Belarusian, Ukrainian and Russian languages.</p>
                     </div>

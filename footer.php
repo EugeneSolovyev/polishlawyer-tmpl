@@ -26,16 +26,43 @@
                     </div>
                 </div>
                 <?php endwhile; endif; wp_reset_query(); ?>
+                <p class="form-button" data-toggle="modal" data-target="#feedback">Also you can use our contact form</p>
             </div>
         </div>
     </div>
-    <?php wp_footer(); ?>
+    <div class="modal fade" id="feedback">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Contact us</h4>
+          </div>
+          <div class="modal-body">
+            <form id="formMain">
+                <div class="form-group">
+                    <label for="userName">Full Name:</label>
+                    <input type="text" name="name" id="userName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">E-mail:</label>
+                    <input type="email" name="email" id="userEmail" class="form-control">
+                </div>
+                <div class="form-group">
+                   <label for="subjectField">Subject:</label>
+                   <textarea name="subjectField" id="subjectField" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Send" class="btn btn-submit">
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
-    <script>
-//        $('.menu-item').on('click',function() {
-//            $('.collapse.in').slideUp();
-//        });
-    </script>
+    <?php wp_footer(); ?>
 </body>
 </html>

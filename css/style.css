@@ -334,6 +334,11 @@ a[rel="next"] {
     display: none;
 }
 
+p.form-button {
+    text-align: center;
+    cursor: pointer;
+}
+
 @media all and (max-width: 850px) {
     .history,
     .expertise {
