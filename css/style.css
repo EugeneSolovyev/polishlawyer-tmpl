@@ -318,6 +318,22 @@ a[rel="next"] {
     margin-top: 2.5em;
 }
 
+.navbar-toggler {
+    background-color: transparent;
+    height: 10vh;
+    outline: 0;
+    margin: 0 auto;
+}
+
+.navbar-toggler>.fa-bars {
+    color: #fff;
+}
+
+.navbar-fixed-top>.navbar-toggler,
+.navbar-fixed-top>.collapse.in {
+    display: none;
+}
+
 @media all and (max-width: 850px) {
     .history,
     .expertise {
@@ -330,5 +346,19 @@ a[rel="next"] {
     
     .greetings {
         padding: 0 10%;
+    }
+    .navbar-fixed-top>.navbar-toggler,
+    .navbar-fixed-top>.collapse.in {
+        display: block;
+    }
+    .navbar-fixed-top>.menu-menu-container {
+        display: none;
+    }
+    .menu {
+        line-height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
     }
 }
