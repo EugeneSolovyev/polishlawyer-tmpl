@@ -19,4 +19,15 @@ $(document).ready(function () {
         });
         return false;
     });
+    $('.team-member').each(function() {
+        $('.team-member>p>img')
+            .unwrap()
+            .wrap('<div class="team-member-card">')
+            .addClass('img-fluid')
+            .after('<div class="email" data-toggle="modal" data-target="#feedback"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>');
+        //Shit and sticks
+        //If you're see this, You have to know that I was sick, drunk and alians forced me
+        //Siriously, I hate WP and jQuery, I wanna write on AngularJS/ReactJS
+        //So sorry for this spaghetti
+    });
 });
