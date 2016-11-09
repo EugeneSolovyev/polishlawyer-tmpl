@@ -3,7 +3,7 @@
     <div class="row">
         <div class="blog page-blog col-lg-12">
             <?php
-            $id=4; // ID заданной рубрики
+            $id=46; // ID заданной рубрики
             //$n=3;   // количество выводимых записей
             $recent = new WP_Query("cat=$id&showposts=$n");
             while($recent->have_posts()) : $recent->the_post();?>

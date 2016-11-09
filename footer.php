@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="contact-info col-lg-6 col-md-12">
                         <?php
-                        $id=9; // ID заданной рубрики
+                        $id=42; // ID заданной рубрики
                         $n=1;   // количество выводимых записей
                         $recent = new WP_Query("cat=$id&showposts=$n");
                         while($recent->have_posts()) : $recent->the_post();?>
@@ -16,7 +16,7 @@
                     </div>
                     <div class="contact-info col-lg-6 col-md-12">
                         <?php
-                        $id=10; // ID заданной рубрики
+                        $id=40; // ID заданной рубрики
                         $n=1;   // количество выводимых записей
                         $recent = new WP_Query("cat=$id&showposts=$n");
                         while($recent->have_posts()) : $recent->the_post();?>

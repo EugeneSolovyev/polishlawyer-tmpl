@@ -16,7 +16,7 @@
                 <?php the_content('Read the rest of this entry &raquo;'); ?>
                 <div class="history">
                     <?php
-                    $id=8; // ID заданной рубрики
+                    $id=32; // ID заданной рубрики
                     $n=1;   // количество выводимых записей
                     $recent = new WP_Query("cat=$id&showposts=$n");
                     while($recent->have_posts()) : $recent->the_post();?>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="expertise">
                     <?php
-                    $id=7; // ID заданной рубрики
+                    $id=44; // ID заданной рубрики
                     $n=1;   // количество выводимых записей
                     $recent = new WP_Query("cat=$id&showposts=$n");
                     while($recent->have_posts()) : $recent->the_post();?>
@@ -53,7 +53,7 @@
                 <?php endwhile; endif; wp_reset_query(); ?>
                 <div class="row">
                     <?php
-                    $id=11; // ID заданной рубрики
+                    $id=36; // ID заданной рубрики
                     $recent = new WP_Query("cat=$id&orderby=date&order=ASC");
                     while($recent->have_posts()) : $recent->the_post();?>
                     <div class="team-member col-lg-6 col-sm-12">
@@ -89,7 +89,7 @@
                 <div class="case-studies-post col-lg-12">
                     <div class="post">
                             <?php
-                            $id=4; // ID заданной рубрики
+                            $id=46; // ID заданной рубрики
                             $n=3;   // количество выводимых записей
                             $recent = new WP_Query("cat=$id&showposts=$n");
                             while($recent->have_posts()) : $recent->the_post();?>

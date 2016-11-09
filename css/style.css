@@ -394,6 +394,32 @@ p.form-button {
     font-family: 'Segoe UI Symbol', sans-serif;
 }
 
+.blog ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.blog ul li a {
+    color: #fff;
+    font-size: 1em;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.pll-parent-menu-item:hover>.sub-menu {
+    display: block;
+}
+
+.pll-parent-menu-item>a {
+    color: #fff !important;
+}
+
+li.lang-item>a:hover {
+    background-color: transparent !important;
+}
+
 @media all and (max-width: 850px) {
     .history,
     .expertise {

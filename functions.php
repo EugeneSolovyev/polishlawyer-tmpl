@@ -16,3 +16,6 @@
         
         include( 'tha-theme-hooks.php' );
     }
+
+
+add_theme_support('menus');
