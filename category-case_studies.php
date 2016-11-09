@@ -13,6 +13,12 @@
                 <?php the_content(); ?>
             </div>
             <?php endwhile; ?>
+            
+            <?php if(function_exists('wp_paginate')) {
+
+            wp_paginate();
+
+            } ?>
         </div>
     </div>
 <?php get_footer(); ?>

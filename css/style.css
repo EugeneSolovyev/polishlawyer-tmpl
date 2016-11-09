@@ -364,6 +364,36 @@ p.form-button {
     color: #fff;
 }
 
+.pagination {
+    width: 100%;
+}
+
+.wp-paginate {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.wp-paginate>li:first-of-type {
+    display: none;
+}
+
+.wp-paginate>li {
+    width: 30px;
+    height: 30px;
+    background-color: #354047;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.wp-paginate>li>a,
+.page.current {
+    line-height: 27px;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Segoe UI Symbol', sans-serif;
+}
+
 @media all and (max-width: 850px) {
     .history,
     .expertise {
