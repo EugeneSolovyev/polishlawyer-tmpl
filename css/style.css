@@ -339,6 +339,31 @@ p.form-button {
     cursor: pointer;
 }
 
+.form-group {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.form-control.name_box,
+.form-control.comment_box {
+    margin-bottom: 1em !important;
+}
+
+.bg-asphalt {
+    background-color: #354047;
+    color: #fff;
+}
+
+.headline,
+.fieldmark {
+    text-align: center;
+}
+
+.comment-meta>a,
+.reply>a {
+    color: #fff;
+}
+
 @media all and (max-width: 850px) {
     .history,
     .expertise {

@@ -54,7 +54,7 @@
                 <div class="row">
                     <?php
                     $id=11; // ID заданной рубрики
-                    $recent = new WP_Query("cat=$id");
+                    $recent = new WP_Query("cat=$id&orderby=date&order=ASC");
                     while($recent->have_posts()) : $recent->the_post();?>
                     <div class="team-member col-lg-6 col-sm-12">
                         <?php the_content(); ?>
@@ -88,17 +88,17 @@
                 </ul>
                 <div class="case-studies-post col-lg-12">
                     <div class="post">
-                        <div class="post-content col-lg-12">
                             <?php
                             $id=4; // ID заданной рубрики
                             $n=3;   // количество выводимых записей
                             $recent = new WP_Query("cat=$id&showposts=$n");
                             while($recent->have_posts()) : $recent->the_post();?>
-                            <h4><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h4>
-                            <div class="postedby"> Posted by <?php the_author_posts_link(); ?> on <?php the_time(); ?></div>
-                            <?php the_content(); ?>
+                            <div class="post-content col-lg-12">
+                                <h4><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h4>
+                                <div class="postedby"> Posted by <?php the_author_posts_link(); ?> on <?php the_time(); ?></div>
+                                <?php the_content(); ?>
+                            </div>
                             <?php endwhile; ?>
-                        </div>
                     </div>
                 </div>
             </div>

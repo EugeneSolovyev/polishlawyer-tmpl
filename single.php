@@ -7,11 +7,12 @@
             <h4><?php the_title(); ?></h4>
             <div class="postedby"> Posted by <?php the_author_posts_link(); ?> on <?php the_time(); ?></div>
             <?php the_content(); ?>
-            <div class="pagenavi"><?php previous_post_link('%link', 'Previous', true); ?> | <?php next_post_link('%link', 'Next', true); ?></div>
+            <div class="pagenavi"><?php previous_post_link('%link', '%title', true); ?> | <?php next_post_link('%link', '%title', true); ?></div>
             <?php endwhile; else : ?>
             <p><?php _e( '<h4>Sorry...</h4><p>There is no post.</p>' ); ?></p>
             <?php endif; ?>
             <div><p><?php posts_nav_link(); ?></p></div>
+            <?php comments_template(); ?>
             <?php if (is_home()) { tha_content_bottom(); } ?>
         </div>
     </div>

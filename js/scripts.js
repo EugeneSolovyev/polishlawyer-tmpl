@@ -30,4 +30,6 @@ $(document).ready(function () {
         //Siriously, I hate WP and jQuery, I wanna write on AngularJS/ReactJS
         //So sorry for this spaghetti
     });
+    
+    $('#submit').addClass('btn bg-asphalt form-control');
 });
