@@ -65,7 +65,10 @@
         </div>
         <div class="row">
             <div class="blog col-lg-12">
-                <h2>Blog</h2>
+                <?php query_posts('page_id=230');
+                if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+                <h2><?php the_title(); ?></h2><?php the_content('Read the rest of this entry &raquo;'); ?>
+                <?php endwhile; endif; wp_reset_query(); ?>
                 <?php
                 $id=1; // ID заданной рубрики
                 $n=3;   // количество выводимых записей
@@ -79,13 +82,10 @@
         </div>
         <div class="row">
             <div class="case-studies col-lg-12">
-               <h2>Case studies</h2>
-                <ul>
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Civil</a></li>
-                    <li><a href="#">Criminal</a></li>
-                    <li><a href="#">Public</a></li>
-                </ul>
+                <?php query_posts('page_id=234');
+                if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+                <h2><?php the_title(); ?></h2><?php the_content('Read the rest of this entry &raquo;'); ?>
+                <?php endwhile; endif; wp_reset_query(); ?>
                 <div class="case-studies-post col-lg-12">
                     <div class="post">
                             <?php
