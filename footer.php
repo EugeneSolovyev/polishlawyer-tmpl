@@ -37,7 +37,12 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title" id="myModalLabel">Contact us</h4>
+            <h4 class="modal-title" id="myModalLabel">
+                <?php query_posts('page_id=115');
+                    if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+                    <?php the_title(); ?>
+                <?php endwhile; endif; ?>
+            </h4>
           </div>
           <div class="modal-body">
             <form id="formMain">

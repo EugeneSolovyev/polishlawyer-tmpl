@@ -63,10 +63,10 @@
                 </div>
             </div>
         </div>
+        <?php query_posts('page_id=230');
+        if ( have_posts() ) : while ( have_posts() ) : the_post();?>
         <div class="row">
             <div class="blog col-lg-12">
-                <?php query_posts('page_id=230');
-                if ( have_posts() ) : while ( have_posts() ) : the_post();?>
                 <h2><?php the_title(); ?></h2><?php the_content('Read the rest of this entry &raquo;'); ?>
                 <?php endwhile; endif; wp_reset_query(); ?>
                 <?php
@@ -77,9 +77,9 @@
                 <h4><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h4>
                 <div class="postedby"> Posted by <?php the_author_posts_link(); ?> on <?php the_time(); ?></div>
                 <?php the_content(); ?>
-                <?php endwhile; ?>
             </div>
         </div>
+        <?php endwhile; ?>    
         <div class="row">
             <div class="case-studies col-lg-12">
                 <?php query_posts('page_id=234');

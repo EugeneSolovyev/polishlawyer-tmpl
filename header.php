@@ -12,6 +12,7 @@
     <meta name="generator" content="Polishlawyer" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>        
    </head>
@@ -20,7 +21,9 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
             <div class="collapse" id="exCollapsingNavbar">
                 <div class="bg-inverse text-muted p-1">
-                    <?php wp_nav_menu( array('menu' => 'Main', 'container' => 'nav' )); ?>
+                   <?php wp_nav_menu(array(
+                      'theme_location' => 'header_menu'
+                    )); ?>
                 </div>
             </div>
             <?php wp_nav_menu( array('menu' => 'Main', 'container' => 'nav' )); ?>
