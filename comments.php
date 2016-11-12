@@ -17,7 +17,7 @@
 		<div class="next-posts"><?php previous_comments_link() ?></div>
 		<div class="prev-posts"><?php next_comments_link() ?></div>
 	</div>
-<div class="row comment_row">
+<div class="comment_row">
 	<div class="col1-1">
 				<ol class="commentlist">
 				<?php wp_list_comments(); ?>

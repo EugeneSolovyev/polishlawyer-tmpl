@@ -17,6 +17,11 @@
 <?php wp_head(); ?>        
    </head>
    <body>
+        <div id="loader-wrapper">
+          <div id="loader"></div>
+          <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+        </div>
         <div class="navbar navbar-fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
             <div class="collapse" id="exCollapsingNavbar">
@@ -26,5 +31,7 @@
                     )); ?>
                 </div>
             </div>
-            <?php wp_nav_menu( array('menu' => 'Main', 'container' => 'nav' )); ?>
+            <div class="fullscreen-menu">
+                <?php wp_nav_menu( array('menu' => 'Main', 'container' => 'nav' )); ?>
+            </div>
         </div>

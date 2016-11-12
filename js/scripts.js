@@ -32,4 +32,11 @@ $(document).ready(function () {
     });
     
     $('#submit').addClass('btn bg-asphalt form-control');
+    $('.pll-parent-menu-item').click(function() {
+        $('.sub-menu').slideToggle();
+    }).css({cursor: 'pointer'});
+    
+    setTimeout(function() {
+        $('body').addClass('loaded');
+    }, 3000);
 });
