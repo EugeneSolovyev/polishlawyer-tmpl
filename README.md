@@ -16,6 +16,5 @@ _/If_ _you_ _do_ _not_ _follow_ _these_ _rules,_ _then_ _it_ _is_ _likely_ _that
 * Support:
 
 >You can contact me:
-
-[e-mail](eugenesolovyev92@gmail.com)
-[github](github.com/EugeneSolovyev)
+1 [e-mail](eugenesolovyev92@gmail.com)
+2 [github](github.com/EugeneSolovyev)
