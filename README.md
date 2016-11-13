@@ -1,6 +1,6 @@
 Manual for this theme (Polish Lawyer).
----
-### How to... ###
+-----------------------------------
+### How to...
 * Existing bug:
 
 > In wp-admin Settings/Languages/Settings/Media - Deactivate, else library media is not displayed correctly.
@@ -18,6 +18,5 @@ Manual for this theme (Polish Lawyer).
 * Support:
 
 >You can contact me:
-
-1 [e-mail](eugenesolovyev92@gmail.com)
-2 [github](github.com/EugeneSolovyev)
+1. [e-mail](eugenesolovyev92@gmail.com)
+2. [github](github.com/EugeneSolovyev)
