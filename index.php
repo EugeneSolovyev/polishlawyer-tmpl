@@ -5,6 +5,7 @@
                 <div class="greetings">
                     <h1><?php bloginfo('name'); ?></h1>
                     <p><?php bloginfo('description'); ?></p>
+                    <a href="#about-us" class="link-down"><i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

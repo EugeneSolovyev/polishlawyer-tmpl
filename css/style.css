@@ -1,6 +1,6 @@
 /*
 Theme Name: PolishLawyer
-Theme URI: ../screenshot.png
+Theme URI: //www.github.com/EugeneSolovyev
 Author: Eugene Solovyev
 Author URI: //www.github.com/EugeneSolovyev
 Description: PolishLawyer Theme was created special for Youras Ziankovich
@@ -16,8 +16,6 @@ License URI: //www.gnu.org/licenses/gpl-2.0.html
 body {
     overflow-x: hidden;
 }
-
-/*==  ===*/
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-family: 'Lato', 'Roboto', sans-serif;
@@ -44,7 +42,6 @@ p, a {
     width: 100%;
     height: auto;
 }
-/*==  ===*/
 
 .container-fluid {
     padding: 0;
@@ -59,7 +56,7 @@ p, a {
 .greetings {
     width: 100%;
     height: 100vh;
-    background: url(../images/51317633636.png) no-repeat 50%;
+    background: url('../images/fscreen.jpg') no-repeat 50%;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -68,6 +65,32 @@ p, a {
     text-align: center;
     padding: 0 30%;
     color: #fff;
+    text-shadow: 0 0 10px #000;
+    position: relative;
+}
+
+.fa-chevron-down {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 80%;
+    left: calc(50% - 25px);
+    color: #fff;
+    cursor: pointer;
+    animation-name: up-and-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.greetings>h1 {
+    font-size: 5em;
+}
+
+.greetings>p {
+    font-size: 1.2em;
 }
 
 .navbar {
@@ -324,7 +347,8 @@ a[rel="next"] {
     margin: 0 auto;
 }
 
-.navbar-toggler>.fa-bars {
+.navbar-toggler>.fa-bars,
+.navbar-toggler>.fa-times {
     color: #fff;
 }
 
@@ -419,7 +443,7 @@ p.form-button {
     color: #fff !important;
 }
 .page-blog {
-    margin-top: 1vh;
+    margin-top: 10vh;
 }
 
 .commentlist {
@@ -456,12 +480,19 @@ p.form-button {
     .navbar-fixed-top>.collapse.in {
         display: block;
     }
+    .collapse.in {
+        border-bottom: 1px solid #fff;
+    }
     .navbar-fixed-top>.menu-menu-container {
         display: none;
     }
     .menu {
         line-height: 10vh;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
     }
     .menu-item {
         height: 2.5em;
@@ -475,6 +506,9 @@ p.form-button {
     }
     .fullscreen-menu {
         display: none;
+    }
+    .page-blog {
+        margin-top: 10vh;
     }
 }
 
@@ -614,4 +648,27 @@ p.form-button {
           transform: translateY(-100%);
   -webkit-transition: all 0.3s 1s ease-out;
   transition: all 0.3s 1s ease-out;
+}
+
+@media all and (max-width: 420px) {
+    .page-blog {
+        margin-top: 10vh;
+    }
+}
+
+div.meteor-slides {
+    width: 100vw;
+    height: 100vh !important;
+}
+
+@keyframes up-and-down {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
 }
