@@ -15,7 +15,7 @@ Manual for this theme (Polish Lawyer).
 >
 >_If_ _you_ _do_ _not_ _follow_ _these_ _rules,_ _then_ _it_ _is_ _likely_ _that_ _in_ _total_ _you_ _get_ _lost_ _due_ _to_ _a_ _broken_ _layout._
 
-*You can contact me:
+* You can contact me:
 
 1. [e-mail](eugenesolovyev92@gmail.com)
 2. [github](github.com/EugeneSolovyev)
