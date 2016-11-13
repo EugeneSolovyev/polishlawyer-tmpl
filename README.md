@@ -1,14 +1,21 @@
-## Manual for this theme (Polish Lawyer). ##
+h2 Manual for this theme (Polish Lawyer).
+---
 ### How to... ###
 * Existing bug:
-##### In wp-admin Settings/Languages/Settings/Media - Deactivate, else library media is not displayed correctly.
-###### /Somehow I can not fix this bug/
+> In wp-admin Settings/Languages/Settings/Media - Deactivate, else library media is not displayed correctly.
+
+_/Somehow_ _I_ _can_ _not_ _fix_ _this_ _bug/_
 * Content:
-##### Translation into another language is necessary to do gradually.
-##### That is, the first thing that needs to be translated - pages, then - categories.
-##### The last step - record.
-###### /If you do not follow these rules, then it is likely that in total you get lost due to a broken layout./
+
+>Translation into another language is necessary to do gradually.
+>That is, the first thing that needs to be translated - pages, then - categories.
+>The last step - record.
+
+_/If_ _you_ _do_ _not_ _follow_ _these_ _rules,_ _then_ _it_ _is_ _likely_ _that_ _in_ _total_ _you_ _get_ _lost_ _due_ _to_ _a_ _broken_ _layout./_
+
 * Support:
-##### You can contact me:
-e-mail: [eugenesolovyev92@gmail.com]
-github: [github.com/EugeneSolovyev]
+
+>You can contact me:
+
+[e-mail](eugenesolovyev92@gmail.com)
+[github](github.com/EugeneSolovyev)
