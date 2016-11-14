@@ -36,7 +36,14 @@ $(document).ready(function () {
         $('.sub-menu').slideToggle();
     }).css({cursor: 'pointer'});
     
+//    $('.navbar-toggler').hover(function() {
+//        $('.navbar-toggler>i').removeClass('fa-bars').addClass('fa-times');
+//    });
+    
+});
+
+$(window).on('load', function() {
     setTimeout(function() {
         $('body').addClass('loaded');
-    }, 3000);
+    }, 500);
 });

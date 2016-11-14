@@ -59,7 +59,7 @@ p, a {
 .greetings {
     width: 100%;
     height: 100vh;
-    background: url(../images/51317633636.png) no-repeat 50%;
+    background: url('../images/fscreen.jpg') no-repeat 50%;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -68,6 +68,7 @@ p, a {
     text-align: center;
     padding: 0 30%;
     color: #fff;
+    text-shadow: 0 0 2px #000;
 }
 
 .navbar {
@@ -324,7 +325,8 @@ a[rel="next"] {
     margin: 0 auto;
 }
 
-.navbar-toggler>.fa-bars {
+.navbar-toggler>.fa-bars,
+.navbar-toggler>.fa-times {
     color: #fff;
 }
 
@@ -419,7 +421,7 @@ p.form-button {
     color: #fff !important;
 }
 .page-blog {
-    margin-top: 1vh;
+    margin-top: 10vh;
 }
 
 .commentlist {
@@ -456,12 +458,19 @@ p.form-button {
     .navbar-fixed-top>.collapse.in {
         display: block;
     }
+    .collapse.in {
+        border-bottom: 1px solid #fff;
+    }
     .navbar-fixed-top>.menu-menu-container {
         display: none;
     }
     .menu {
         line-height: 10vh;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
     }
     .menu-item {
         height: 2.5em;
@@ -475,6 +484,9 @@ p.form-button {
     }
     .fullscreen-menu {
         display: none;
+    }
+    .page-blog {
+        margin-top: 10vh;
     }
 }
 
@@ -614,4 +626,15 @@ p.form-button {
           transform: translateY(-100%);
   -webkit-transition: all 0.3s 1s ease-out;
   transition: all 0.3s 1s ease-out;
+}
+
+@media all and (max-width: 420px) {
+    .page-blog {
+        margin-top: 10vh;
+    }
+}
+
+div.meteor-slides {
+    width: 100vw;
+    height: 100vh !important;
 }
