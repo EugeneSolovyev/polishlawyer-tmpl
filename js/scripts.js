@@ -1,19 +1,17 @@
 $(document).ready(function () {
     $("#formMain").submit(function () {
-        // Получение ID формы
+        // get form's id
         var formID = $(this).attr('id');
-        // Добавление решётки к имени ID
+        // add '#' for id-name
         var formNm = $('#' + formID);
         $.ajax({
             type: "POST"
             , url: 'mail.php'
             , data: formNm.serialize()
             , success: function (data) {
-                // Вывод текста результата отправки
                 $(formNm).html(data);
             }
             , error: function (jqXHR, text, error) {
-                // Вывод текста ошибки отправки
                 $(formNm).html(error);
             }
         });
@@ -36,10 +34,26 @@ $(document).ready(function () {
         $('.sub-menu').slideToggle();
     }).css({cursor: 'pointer'});
     
+<<<<<<< HEAD
 //    $('.navbar-toggler').hover(function() {
 //        $('.navbar-toggler>i').removeClass('fa-bars').addClass('fa-times');
 //    });
     
+=======
+//    $('.navbar-toggler').focusin(function() {
+//        $('.navbar-toggler>i').removeClass('fa-bars').addClass('fa-times');
+//    }).focusout(function() {
+//        $('.navbar-toggler>i').removeClass('fa-times').addClass('fa-bars');
+//    });
+    
+    $('.link-down, a[href*="#"]').click(function() {
+        var elClick = $(this).attr('href');
+        var destination = ($(elClick).offset().top) - 80;
+        $('body').animate({scrollTop: destination}, 600);
+        return false;
+    });
+    
+>>>>>>> 3b02551b90fcce0a395997fe6e72f94052360d1e
 });
 
 $(window).on('load', function() {
